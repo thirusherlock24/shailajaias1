@@ -1,0 +1,44 @@
+.navigation {
+    display: flex;
+    flex-direction: column; /* Make buttons appear vertically */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0e85d1;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .navigation button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space between buttons */
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .navigation {
+      flex-direction: row; 
+      gap: 4%; /* Add little gap between buttons */
+      /* Switch back to horizontal layout on larger screens */
+      padding:1%;
+
+    }
+  
+    .navigation button {
+      margin-bottom: 0; /* Reset margin to default for horizontal layout */
+      margin-right: 10px; /* Add space between buttons */
+    }
+  }
+  
+  .section {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  

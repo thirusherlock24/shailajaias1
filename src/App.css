@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  min-height: 100vh; /* Set minimum height to 100vh */
+
 }
 
 .App-logo {
@@ -12,6 +14,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.scrollable-navigation {
+  overflow-y: auto;
+  height: calc(100vh - 100px); /* Adjust height according to your needs */
+}
+
+/* Adjust height according to your needs */
+/* You might need to add more styles to Navigation component if necessary */
+
 
 .App-header {
   background-color: #282c34;
