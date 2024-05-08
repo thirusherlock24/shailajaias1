@@ -13,7 +13,7 @@ const Page1 = () => {
   }, []);
 
   return (
-    <div style={{ height: '100vh', backgroundColor: 'lightblue' }}>
+    <div className="page-1" style={{ height: '100vh', backgroundColor: 'lightblue' }}>
      <div className="header">
   <h1 className="title">
     Comprehensive Mentorship Programme for UPSC CSE 2025 & beyond
@@ -32,7 +32,7 @@ const Page1 = () => {
       </div>
       <div>
         <h2>
-          <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#ce5e11', marginLeft: '10%' }} />
+          <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#ce5e11', marginLeft: '10%', paddingRight:'1%'}} />
           Customised <span style={{ color: '#ff8102' }}>Individual Plan</span>
         </h2>
       </div>
@@ -44,7 +44,7 @@ const Page1 = () => {
       </div>
       <div>
         <h2>
-          <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#ce5e11',  marginLeft: '10%'}} />
+          <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#ce5e11',  marginLeft: '10%', paddingRight:'1%'}} />
           Ensuring Implementation of Plan
         </h2>
       </div>
@@ -56,7 +56,7 @@ const Page1 = () => {
       </div>
       <div>
         <h2>
-          <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#ce5e11',  marginLeft: '10%' }} />
+          <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#ce5e11',  marginLeft: '10%', paddingRight:'1%' }} />
           Live <span style={{ color: '#ff8102' }}>Evaluation by Mentor himself</span>
         </h2>
       </div>
@@ -68,7 +68,7 @@ const Page1 = () => {
       </div>
       <div>
         <h2>
-          <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#ce5e11',  marginLeft: '10%' }} />
+          <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#ce5e11',  marginLeft: '10%', paddingRight:'1%' }} />
           Content, Tests & Classes
         </h2>
       </div>

@@ -35,11 +35,13 @@ function App() {
   const folders = ['Daily', 'Monthly', 'Yearly']; // Add folder names here
 
   return (
-    <div>
+    <div className="full-height"> {/* Add a class to set full height */}
     <div>
      <Landing />
+     <div>
       <Navigation />
-      <div className="scrollable-navigation">
+      </div>
+      <div>
         <Navpages />
       </div>
     </div>

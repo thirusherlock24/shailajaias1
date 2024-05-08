@@ -7,7 +7,12 @@
   background-color: #add8e6;
   color: #fff;
 }
-
+.nav-fix2 {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky; /* For other browsers */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it's above other content */
+}
 .name {
   flex: 1 0 60%;
   max-width: 200px;
@@ -38,7 +43,7 @@
   flex: 1 0 33%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: right;
   color: #000000;
 }

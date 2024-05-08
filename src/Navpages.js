@@ -6,7 +6,7 @@ import Page2 from './Page2';
 function Navpages() {
   
   return (
-    <div  className="scrollable-navigation">
+    <div >
         <div id="page1" style={{ height: '100vh', backgroundColor: 'lightblue' }}>
         <Page1/>
       </div>
