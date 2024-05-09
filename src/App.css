@@ -1,16 +1,13 @@
 .App {
-  text-align: center;
-  min-height: 100vh; /* Set minimum height to 100vh */
-
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-.full-height {
-  height: 100vh; /* Ensure full height of the viewport */
-}
+
 
 /* Ensure that content doesn't overflow horizontally */
 body {
@@ -18,10 +15,7 @@ body {
 }
 
 /* Apply flexbox to make sure content stays within viewport width */
-.full-height > div {
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* Ensure Landing, Navigation, and Navpages divs stay within viewport width */
 .Landing,
@@ -30,40 +24,3 @@ body {
   width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-.scrollable-navigation {
-  overflow-y: auto;
-  height: calc(100vh - 100px); /* Adjust height according to your needs */
-}
-
-/* Adjust height according to your needs */
-/* You might need to add more styles to Navigation component if necessary */
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

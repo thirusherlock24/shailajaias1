@@ -13,7 +13,8 @@ const Page1 = () => {
   }, []);
 
   return (
-    <div className="page-1" style={{ height: '100vh', backgroundColor: 'lightblue' }}>
+    <div className="page-1" style={{ height: '110vh', backgroundColor: 'lightblue' }}>
+      <div className='move'>
      <div className="header">
   <h1 className="title">
     Comprehensive Mentorship Programme for UPSC CSE 2025 & beyond
@@ -96,7 +97,7 @@ const Page1 = () => {
       </div>
       </div>
       </div>
-
+      </div>
     </div>
   );
 };

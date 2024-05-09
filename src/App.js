@@ -9,8 +9,7 @@ import { Folder } from '@mui/icons-material';
 import { Box } from '@mui/material';
 import Landing from './Landingpage.js';
 import Navigation from './Navigation.js';
-import Page1 from './Page1';
-import Page2 from './Page2';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navpages from './Navpages.js';
 function App() {
@@ -35,19 +34,19 @@ function App() {
   const folders = ['Daily', 'Monthly', 'Yearly']; // Add folder names here
 
   return (
-    <div className="full-height"> {/* Add a class to set full height */}
     <div>
-     <Landing />
-     <div>
-      <Navigation />
+      <div >
+        <div className="Landing">
+          <Landing />
+        </div>
+        <div className="Navigation">
+          <Navigation />
+        </div>
       </div>
-      <div>
+      <div className="Navpages">
         <Navpages />
       </div>
     </div>
-
- 
-      </div>
   );
 }
 

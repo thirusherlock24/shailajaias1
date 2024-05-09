@@ -1,9 +1,9 @@
 .nav-fix {
-  position: -webkit-sticky; /* For Safari */
-  position: sticky; /* For other browsers */
+  position: fixed; /* For other browsers */
   top: 16%; /* Stick to the top of the viewport */
-  z-index: 1000; /* Ensure it's above other content */
+  /* height: 100px; Set a fixed height for the sticky navigation */
 }
+
 
 .navigation {
   display: flex;
@@ -51,10 +51,3 @@
 
   
 
-.section {
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-}

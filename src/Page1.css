@@ -1,4 +1,10 @@
-.page-1{
+.page-1 {
+  position: relative; /* Ensure that top property works */
+  transform: translateY(+18%); /* Vertically center the element */
+}
+.move
+{
+  /* padding-top: 1%; */
 }
 .content{
     flex: 1 0 60%;
@@ -20,6 +26,10 @@
     flex-direction: column;
   }
   @media (max-width:600px) {
+    .page-1{
+      position: relative; /* Ensure that top property works */
+    transform: translateY(+20%); 
+    }
     .details {
       flex-direction: column;
       align-items: center;
@@ -29,6 +39,7 @@
     display:none;
     width: '60%';
   }
+
   .state{
     display:none;
   }

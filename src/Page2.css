@@ -6,6 +6,10 @@
   margin-left: 3%;
   padding-top:5%;
 }
+.page-2 {
+  position: relative; /* Ensure that top property works */
+  /* transform: translateY(+5%); Vertically center the element */
+}
 .content2 div {
     flex: 1; /* Each div takes equal space */
     display: flex;
@@ -32,7 +36,11 @@
     margin-bottom: 1%;
   }
   @media (max-width:600px) {
-   
+    .page-2 {
+      position: relative; /* Ensure that top property works */
+      transform: translateY(+3%);/* Vertically center the element*/
+      padding-bottom: 5%;
+    }
   }
 
   .container2{

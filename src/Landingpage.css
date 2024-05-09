@@ -8,10 +8,8 @@
   color: #fff;
 }
 .nav-fix2 {
-  position: -webkit-sticky; /* For Safari */
-  position: sticky; /* For other browsers */
+  position: fixed; /* For other browsers */
   top: 0; /* Stick to the top of the viewport */
-  z-index: 1000; /* Ensure it's above other content */
 }
 .name {
   flex: 1 0 60%;
@@ -34,7 +32,7 @@
   max-width: 70%;
   margin: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .name {
     text-align: center;
   }
@@ -48,9 +46,27 @@
   color: #000000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
+  .header {
+    width: 100%; /* Set width to 100% */
+    flex-wrap: wrap; /* Wrap elements in a row when there's not enough space */
+    justify-content: center; /* Center content within the header */
+  }
+
+  .name {
+    text-align: center; /* Center text within name element */
+    flex: 1 1 auto; /* Allow name to take remaining space if needed */
+    margin: 10px 0; /* Add margin between elements */
+    max-width: 100%; /* Set max-width to 100% */
+  }
+
   .logo-container,
   .contact-details {
-    display: none;
+    display: none; /* Hide logo-container and contact-details on mobile */
   }
+
+  
 }
+
+

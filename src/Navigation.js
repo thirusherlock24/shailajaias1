@@ -1,8 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@mui/material';
-import Page1 from './Page1';
-import Page2 from './Page2';
 import './Navigation.css';
 function Navigation() {
     const scrollToSection = (id) => {
@@ -11,7 +7,7 @@ function Navigation() {
         const headerHeight = document.querySelector('.header').offsetHeight;
         const elementOffset = element.offsetTop - headerHeight;
         const screenHeight = window.innerHeight;
-        const scrollPosition = elementOffset - (0.1 * screenHeight); // Adjust percentage as needed
+        const scrollPosition = elementOffset - (0.1*screenHeight); // Adjust percentage as needed
         window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
     }
     };
@@ -21,7 +17,7 @@ function Navigation() {
       
       <button onClick={() => scrollToSection('page1')}>MENTORSHIP</button>
       <button onClick={() => scrollToSection('page2')}>CURRENT AFFAIRS</button>
-      <button onClick={() => scrollToSection('page1')}>MAINS TEST SERIES</button>
+      <button onClick={() => scrollToSection('page3')}>MAINS TEST SERIES</button>
       <button onClick={() => scrollToSection('page2')}>TESTIMONIALS</button>
     
 

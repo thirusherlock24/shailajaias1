@@ -1,0 +1,59 @@
+.title3 {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+  }
+  .page-3 {
+    
+    position: relative; /* Ensure that top property works */
+    /* transform: translateY(+5%); Vertically center the element */
+  }
+  
+  @media (max-width: 600px) {
+    .page-3 {
+        position: relative; /* Ensure that top property works */
+        top: 5%; /* Position 5% from the top of its container */
+        transform: translateY(+2%); /* Vertically center the element (adjust as needed) */
+        display: flex;
+        flex-direction: column;
+     
+      }
+      .move
+      {
+        margin-top: 8%;
+      }
+    .title3 {
+      font-size: 5vw;
+    }
+    .details3 {
+        display: flex;
+    flex-direction: column;
+  }
+  }
+  .details3 {
+    display: flex; /* Use flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; 
+    padding-top:2%;
+    display: flex;
+    flex-direction: row;
+  }
+  .inside-heading
+  {
+    margin-bottom: 5%;
+  }
+  .inside-div{
+    flex: 1; /* Each div takes equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6%;
+    border:1px solid #ce5e11;
+    border-radius: 35px;
+    margin-right: 5%;
+    margin-bottom: 1%;
+  }
