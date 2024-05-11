@@ -1,59 +1,64 @@
 .title3 {
-    padding: 1%;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 2vw;
-    font-weight: bold;
-    color: #000000;
-    text-align: center;
-  }
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.page-3 {
+  position: relative; /* Ensure that top property works */
+}
+
+@media (max-width: 600px) {
   .page-3 {
-    
     position: relative; /* Ensure that top property works */
-    /* transform: translateY(+5%); Vertically center the element */
-  }
-  
-  @media (max-width: 600px) {
-    .page-3 {
-        position: relative; /* Ensure that top property works */
-        top: 5%; /* Position 5% from the top of its container */
-        transform: translateY(+2%); /* Vertically center the element (adjust as needed) */
-        display: flex;
-        flex-direction: column;
-     
-      }
-      .move
-      {
-        margin-top: 8%;
-      }
-    .title3 {
-      font-size: 5vw;
-    }
-    .details3 {
-        display: flex;
-    flex-direction: column;
-  }
-  }
-  .details3 {
-    display: flex; /* Use flexbox */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; 
-    padding-top:2%;
+    top: 5%; /* Position 5% from the top of its container */
+    transform: translateY(+2%); /* Vertically center the element (adjust as needed) */
     display: flex;
-    flex-direction: row;
-  }
-  .inside-heading
-  {
+    flex-direction: column;
     margin-bottom: 5%;
   }
-  .inside-div{
-    flex: 1; /* Each div takes equal space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6%;
-    border:1px solid #ce5e11;
-    border-radius: 35px;
-    margin-right: 5%;
-    margin-bottom: 1%;
+  .move {
+    margin-top: 8%;
   }
+  .title3 {
+    font-size: 5vw;
+  }
+  .details3 {
+    flex-direction: column; /* Vertical on small screens */
+  }
+  .inside-div{
+    margin-right: 0;
+  }
+}
+
+.details3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  flex-direction: row; /* Default: Horizontal on large screens */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if they don't fit */
+  gap: 1rem; /* Add some spacing between items */
+}
+.inside-heading {
+  margin-bottom: 5%;
+}
+
+.inside-div {
+  .inside-div {
+    flex: 1 1 300px; /* Grow to fill available space, but min-width 300px */
+    /* ... (rest of the .inside-div styles) ... */
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6%;
+  border: 1px solid #ce5e11;
+  border-radius: 35px;
+  margin-right: 5%;
+  margin-bottom: 1%;
+}

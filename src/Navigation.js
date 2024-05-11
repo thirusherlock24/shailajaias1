@@ -18,7 +18,7 @@ function Navigation() {
       <button onClick={() => scrollToSection('page1')}>MENTORSHIP</button>
       <button onClick={() => scrollToSection('page2')}>CURRENT AFFAIRS</button>
       <button onClick={() => scrollToSection('page3')}>MAINS TEST SERIES</button>
-      <button onClick={() => scrollToSection('page2')}>TESTIMONIALS</button>
+      <button onClick={() => scrollToSection('page4')}>TESTIMONIALS</button>
     
 
      

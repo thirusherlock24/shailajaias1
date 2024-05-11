@@ -4,6 +4,7 @@ import { Button } from '@mui/material';
 import Page1 from './Page1';
 import Page2 from './Page2';
 import Page3 from './Page3';
+import Page4 from './Page4';
 function Navpages() {
   
   return (
@@ -19,7 +20,10 @@ function Navpages() {
         <Page3/>
     
       </div>
-
+      <div id="page4">
+        <Page4/>
+    
+      </div>
 
 
      
