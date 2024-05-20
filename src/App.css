@@ -3,16 +3,24 @@
   flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 
 /* Ensure that content doesn't overflow horizontally */
 body {
   overflow-x: hidden;
 }
+/* App.css or a global CSS file */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 
 /* Apply flexbox to make sure content stays within viewport width */
 

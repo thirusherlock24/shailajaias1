@@ -1,34 +1,48 @@
+// Navigation.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navigation.css';
+import test from '../src/assets/test.webp';
+import ment from '../src/assets/ment.webp';
+import ca from '../src/assets/ca.webp';
+import ma from '../src/assets/ma.webp';
+import about from '../src/assets/about.webp';
+
 function Navigation() {
-    const scrollToSection = (id) => {
-      const element = document.getElementById(id);
-      if (element) {
-        const headerHeight = document.querySelector('.header').offsetHeight;
-        const elementOffset = element.offsetTop - headerHeight;
-        const screenHeight = window.innerHeight;
-        const scrollPosition = elementOffset - (0.1*screenHeight); // Adjust percentage as needed
-        window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
-    }
-    };
   return (
-    <div>
-    <div className="navigation nav-fix"> {/* Add class nav-fix for sticky positioning */}
-      
-      <button onClick={() => scrollToSection('page1')}>MENTORSHIP</button>
-      <button onClick={() => scrollToSection('page2')}>CURRENT AFFAIRS</button>
-      <button onClick={() => scrollToSection('page3')}>MAINS TEST SERIES</button>
-      <button onClick={() => scrollToSection('page4')}>TESTIMONIALS</button>
-    
-
-     
-
-
-
-     
-    </div>
+    <div className="navigation">
+      <Link to="/" className="nav-link">
+        <button>
+          <img src={ment} alt="Mentorship Icon" className="nav-icon" />
+          <span className="nav-text">MENTORSHIP</span>
+        </button>
+      </Link>
+      <Link to="/page2" className="nav-link">
+        <button>
+          <img src={ca} alt="Current Affairs Icon" className="nav-icon" />
+          <span className="nav-text">CURRENT AFFAIRS</span>
+        </button>
+      </Link>
+      <Link to="/page3" className="nav-link">
+        <button>
+          <img src={ma} alt="Mains Test Series Icon" className="nav-icon" />
+          <span className="nav-text">MAINS TEST SERIES</span>
+        </button>
+      </Link>
+      <Link to="/page4" className="nav-link">
+        <button>
+          <img src={test} alt="Testimonials Icon" className="nav-icon" />
+          <span className="nav-text">TESTIMONIALS</span>
+        </button>
+      </Link>
+      <Link to="/page5" className="nav-link">
+        <button>
+          <img src={about} alt="About Icon" className="nav-icon" />
+          <span className="nav-text">ABOUT</span>
+        </button>
+      </Link>
     </div>
   );
-};
+}
 
 export default Navigation;

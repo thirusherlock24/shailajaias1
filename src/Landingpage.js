@@ -5,15 +5,15 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Landingpage = () => {
   return (
-    <header className="header nav-fix2">
+    <header className="header">
       <div className="name">
-      <h1 style={{ fontSize: '2rem' }}>
+        <h1 style={{ fontSize: '2rem' }}>
           <span style={{ color: '#115ece' }}><strong>SHAILAJA</strong></span>
           <span style={{ color: '#ce5e11' }}><strong>IAS</strong></span>
         </h1>
       </div>
       <div className="logo-container">
-        <img src={symbol} alt='logo' className='logo'></img>
+        <img src={symbol} alt='logo' className='logo' />
       </div>
       <div className="contact-details">
         <div>

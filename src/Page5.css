@@ -1,0 +1,49 @@
+/* Page5.css */
+.page-5 {
+  font-family: Arial, sans-serif;
+}
+
+.title5 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5vw;
+  color: #ce5e11;
+}
+
+.container5 {
+  display: flex;
+  justify-content: center; /* Center content in the container */
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 0 auto; /* Center container */
+  max-width: 1200px; /* Maximum width for larger screens */
+  gap: 2rem; /* Add gap between content and image */
+}
+
+.content5 {
+  flex: 1;
+  color: #000000;
+  margin: 0 2rem; /* Add margin to left and right */
+  text-align: justify; /* Align text to both left and right margins */
+}
+
+.content5 p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .container5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content5 {
+    margin: 0 1rem;
+  }
+
+  .title5 {
+    font-size: 5vw;
+  }
+}

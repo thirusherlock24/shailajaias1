@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Page3.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
-
+import {Link} from 'react-router-dom'
 const Page3 = () => {
   useEffect(() => {
     window.scrollTo({
@@ -12,7 +12,7 @@ const Page3 = () => {
   }, []);
 
   return (
-    <div className="page-3" style={{ minHeight: '80vh', backgroundColor: 'lightblue', overflowX: 'hidden' }}>
+    <div className="page-3" style={{ minHeight: '100vh', backgroundColor: '#ffffff', overflowX: 'hidden' }}>
       <div className="move">
         <div className="header3">
           <h1 className="title3">
@@ -20,7 +20,7 @@ const Page3 = () => {
           </h1>
         </div>
         <div className='details3' style={{ fontSize: '1.2em', marginLeft: '5%' }}>
-          <a href="#" className="link">
+        <Link to="/Mains-CA" target="_blank" rel="noopener noreferrer">
             <div className='inside-div'>
               <div className='inside-heading'>
                 <h2>
@@ -37,8 +37,8 @@ const Page3 = () => {
                 </h2>
               </div>
             </div>
-          </a>
-          <a href="#" className="link">
+          </Link>
+          <Link to="/Mains-CA" target="_blank" rel="noopener noreferrer">
             <div className='inside-div'>
               <div className='inside-heading'>
                 <h2>
@@ -55,8 +55,8 @@ const Page3 = () => {
                 </h2>
               </div>
             </div>
-          </a>
-          <a href="#" className="link">
+            </Link>
+          <Link to="/Mains-CA" target="_blank" rel="noopener noreferrer">
             <div className='inside-div'>
               <div className='inside-heading'>
                 <h2>
@@ -72,7 +72,7 @@ const Page3 = () => {
                 </h2>
               </div>
             </div>
-          </a>
+            </Link>
         </div>
       </div>
     </div>

@@ -1,20 +1,22 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
-import "firebase/firestore";
-import firebase from 'firebase/compat/app'; // Adjusted import statement
-import 'firebase/compat/storage'; // Import storage module separately if needed
-import 'firebase/storage';
-import Retrieve from './Retrieve.js';
-import { Folder } from '@mui/icons-material';
-import { Box } from '@mui/material';
+import 'firebase/firestore';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth'; // Import Firebase Authentication
+import 'firebase/compat/storage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './Landingpage.js';
 import Navigation from './Navigation.js';
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navpages from './Navpages.js';
+import Page1 from './Page1';
+import Page2 from './Page2';
+import Page3 from './Page3';
+import Page4 from './Page4';
+import Retrieve from './Retrieve.js';
+import Page5 from './Page5';
+import MainsRetrieve from './MainsRetrieve.js';
+import Notify from './FetchNotify.js'
+import FetchNotify from './FetchNotify.js';
 function App() {
-
- 
   const firebaseConfig = {
     // Your Firebase project configuration
     apiKey: "AIzaSyCs9U_csYuioIgSAfDT9GQDzPlMCiHgSpQ",
@@ -26,27 +28,49 @@ function App() {
     measurementId: "G-D72B51KFL6"
   };
 
-  firebase.initializeApp(firebaseConfig);
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
 
-  const [activeFolder, setActiveFolder] = useState(null);
+  useEffect(() => {
+    firebase.auth().signInAnonymously().catch(function(error) {
+      console.error("Error signing in anonymously:", error);
+    });
+  }, []);
 
-
-  const folders = ['Daily', 'Monthly', 'Yearly']; // Add folder names here
+  const Layout = ({ children }) => (
+    <>
+      <div className="Landing">
+        <Landing />
+      </div>
+      <div className="Navigation">
+        <Navigation />
+        
+      </div>
+      <div className="Notify">
+      <Notify/>
+      </div>
+      <div>
+        
+        {children}
+      </div>
+    </>
+  );
 
   return (
-    <div>
-      <div >
-        <div className="Landing">
-          <Landing />
-        </div>
-        <div className="Navigation">
-          <Navigation />
-        </div>
-      </div>
-      <div className="Navpages">
-        <Navpages />
-      </div>
-    </div>
+    <Router>
+        <Routes>
+
+      <Route path="/" element={<Layout><Page1 /></Layout>} />
+        <Route path="/page2" element={<Layout><Page2 /></Layout>} />
+        <Route path="/page3" element={<Layout><Page3 /></Layout>} />
+        <Route path="/page4" element={<Layout><Page4 /></Layout>} />
+        <Route path="/page5" element={<Layout><Page5 /></Layout>} />
+        <Route path="/CA" element={<Retrieve  />} />
+        <Route path="/Mains-CA" element={<MainsRetrieve />} />
+        {/* Add more routes as needed */}
+      </Routes>
+    </Router>
   );
 }
 

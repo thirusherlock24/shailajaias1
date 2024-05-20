@@ -1,78 +1,209 @@
-.page-1 {
-  position: relative; /* Ensure that top property works */
-  transform: translateY(+18%); /* Vertically center the element */
+/* Navigation.css */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #0e85d1;
 }
-.move
-{
-  /* padding-top: 1%; */
+
+.nav-link {
+  text-decoration: none;
 }
-.content{
-    flex: 1 0 60%;
+
+button {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 10px;
+  color: white;
+}
+
+.nav-icon {
+  display: none;
+  width: 32px; /* Default icon size */
+  height: 32px;
+}
+
+.nav-text {
+  display: block;
+  font-size: 18px; /* Default text size */
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .nav-icon {
+    display: block;
+    width: 55px; /* Further increase icon size for mobile */
+    height: 55px;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  button {
+    flex: 0 0 45%;
+    margin: 6px 0;
+    font-size: 18px; /* Adjust button text size for mobile */
+  }
+}
+
+/* Content and Page Styles */
+.content {
+  flex: 1 0 60%;
   display: flex;
   flex-direction: column;
   color: #000000;
   margin-left: 3%;
 }
+
+.page-1 {
+  transform: translateY(-0.1%); /* Vertically center the element */
+}
+
 .content div {
-    flex: 1; /* Each div takes equal space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-  }
+  flex: 1; /* Each div takes equal space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.details {
+  flex: 1 0 40%;
+  position: relative; /* Necessary for absolutely positioned children */
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
   .details {
-    flex: 1 0 40%;
-    position: relative; /* Necessary for absolutely positioned children */
     flex-direction: column;
-  }
-  @media (max-width:600px) {
-    .page-1{
-      position: relative; /* Ensure that top property works */
-    transform: translateY(+20%); 
-    }
-    .details {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; /* Center in mobile view */
-
-        .youtube{
-    display:none;
-    width: '60%';
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
   }
 
-  .state{
-    display:none;
+  .youtube {
+    display: none;
+    width: 60%;
   }
-    }
-  }
+}
 
-  .container{
-    display: flex;
-    flex-direction: row;
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the start of the container */
+  padding: 1rem; /* Add padding to the container */
+}
+
+.title {
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #ce5e11;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
   .title {
-    padding: 1%;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 2vw;
-    font-weight: bold;
-    color: #ce5e11;
-    text-align: center;
+    font-size: 5vw;
   }
-  
-  @media (max-width: 600px) {
-    .title {
-      font-size: 5vw;
-    }
-  }
-  @media (max-width: 600px) {
-    .container {
-      flex-direction: column;
-      align-items: center; /* Center items horizontally */
 
-    }
-
-      
+  .container {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
   }
- 
-  
+}
+
+/* Form Styles */
+form {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* White background */
+  padding: 1rem;
+  border: 1px solid #0e85d1;
+  width: 60%;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+form label {
+  font-weight: bold;
+  width: 30%; /* Adjust the width as necessary */
+  margin-right: 1rem;
+}
+
+form input {
+  flex: 1;
+  padding: 0.3rem; /* Reduced padding for smaller input size */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.5rem;
+  background-color: #0e85d1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-self: center; /* Center the submit button */
+}
+
+form button:hover {
+  background-color: #0a6ba1;
+}
+
+form p {
+  color: red;
+  margin: 0;
+  margin-left: 30%;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 90%; /* Full width for smaller screens */
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  form input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  form p {
+    margin-left: 0;
+    width: 100%;
+  }
+}

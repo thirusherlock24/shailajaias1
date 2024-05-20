@@ -17,54 +17,34 @@ const Page4 = () => {
   };
   const testimonials = [
     {
-        name: 'madhu',
-        comment: 'I am madhu, Rank 01, UPSC CSE 2024. I am filled with gratitude for the intensive efforts in action and spirit put by you. I want to take this opportunity to thank gowtham Sir for his continuous support and guidance. In all the three stages of Prelims, Mains and PT, shailaja delivers excellence. I am thankful for your contribution in my journey.',
-        picture: '/images/1.jpeg'
-      },
-      {
-        name: 'yas',
-        comment: 'I am yas, Rank 02, UPSC CSE 2024. I am filled with gratitude for the intensive efforts in action and spirit put by you. I want to take this opportunity to thank gowtham Sir for his continuous support and guidance. In all the three stages of Prelims, Mains and PT, shailaja delivers excellence. I am thankful for your contribution in my journey.',
-        picture: '/images/2.jpeg'
-      },
-    {
-      name: 'mithun',
-      comment: 'I am mithun, Rank 420, UPSC CSE 2024. I am filled with gratitude for the intensive efforts in action and spirit put by sir. I want to take this opportunity to thank gowtham Sir for his continuous support and guidance. In all the three stages of Prelims, Mains and PT, shailaja delivers excellence. I am thankful for your contribution in my journey.',
-      picture: '/images/m.jpg'
+      name: 'IFS RAJESH PONNAPPA',
+      rank:'AIR 222 in UPSC CSE 2021',
+      comment: '      I was lucky to have had the best of support. Gautham Sir has been pivotal in helping me through my Mains GS Papers. From helping me in analysing how to improve my answers, clearing my doubts and giving me pointers in the right direction, he boosted my confidence. I still remember how Sir, would sit with me even after a long day to discuss my Practice Papers. I owe a lot to Sir for all the support I received in the two and half months before my Mains Exam.',
+      picture: '/images/2.jpg'
     },
     {
-      name: 'rahul',
-      comment: 'I am rahul, Rank 8, UPSC CSE 2024. I am filled with gratitude for the intensive efforts in action and spirit put by sir. I want to take this opportunity to thank gowtham Sir for his continuous support and guidance. In all the three stages of Prelims, Mains and PT, shailaja delivers excellence. I am thankful for your contribution in my journey.',
-      picture: '/images/4.jpeg'
+      name: 'IAS SRAVAN KUMAR',
+      rank:'AIR 222 in UPSC CSE 2022, AIR 521 in UPSC CSE 2021',
+      comment: '      I would like to thank you for all the support and mentorship you\'ve given me since 2020. You\'ve been more than a mentor in this UPSC Journey. The constant motivation to do better has kept me going. Your detailed evaluation and suggestions helped me improve my writing skills.',
+      picture: '/images/3.jpg'
     },
     {
-        name: 'bharath',
-        comment: 'I am bharath, Rank 7, UPSC CSE 2024. I am filled with gratitude for the intensive efforts in action and spirit put by sir. I want to take this opportunity to thank gowtham Sir for his continuous support and guidance. In all the three stages of Prelims, Mains and PT, shailaja delivers excellence. I am thankful for your contribution in my journey.',
-        picture: '/images/b.jpg'
-      },
-      {
-        name: 'purnima',
-        comment: 'I am purnima, Rank 999, UPSC CSE 2024. I am filled with gratitude for the intensive efforts in action and spirit put by sir. I want to take this opportunity to thank gowtham Sir for his continuous support and guidance. In all the three stages of Prelims, Mains and PT, shailaja delivers excellence. I am thankful for your contribution in my journey.',
-        picture: '/images/p.jpeg'
-      },
-      {
-        name: 'mounika',
-        comment: 'I am mounika, Rank 14, UPSC CSE 2024. I am filled with gratitude for the intensive efforts in action and spirit put by sir. I want to take this opportunity to thank gowtham Sir for his continuous support and guidance. In all the three stages of Prelims, Mains and PT, shailaja delivers excellence. I am thankful for your contribution in my journey.',
-        picture: '/images/mo.jpeg'
-      },
-      {
-        name: 'harith',
-        comment: 'I am harith, Rank 3, UPSC CSE 2024. I am filled with gratitude for the intensive efforts in action and spirit put by sir. I want to take this opportunity to thank gowtham Sir for his continuous support and guidance. In all the three stages of Prelims, Mains and PT, shailaja delivers excellence. I am thankful for your contribution in my journey.',
-        picture: '/images/h.jpg'
-      },
-      {
-        name: 'rishab',
-        comment: 'I am rishab, Rank 11, UPSC CSE 2024. I am filled with gratitude for the intensive efforts in action and spirit put by sir. I want to take this opportunity to thank gowtham Sir for his continuous support and guidance. In all the three stages of Prelims, Mains and PT, shailaja delivers excellence. I am thankful for your contribution in my journey.',
-        picture: '/images/r.jpg'
-      }
-   ]
+      name: 'KANHA JOSHI',
+      rank:'AIR 16 in UPSC CAPF AC 2021  ',
+      comment: '      Here the support provided to students is not mere mechanical, but it gives true mentorship and customised support as per the need of the student. I have personally benefited from the true support and mentorship of Shri G V Goutham sir. He provided me the right guidance at right times and motivated me to achieve my dreams. He has been one of the biggest factors behind my achievement.',
+      picture: '/images/4.jpg'
+    },
+    {
+      name: 'AMRITHA SURESH',
+      rank:'AIR 22 in RBI Grade B 2023 Exam ',
+      comment: '       Goutham Sir is a great mentor who will look at your preparation holistically and ensure that you\'re always on the right track. “I\'m grateful to have known you over the past year as a mentor and a friend”',
+      picture: '/images/5.jpg'
+    }
+  ];
+  
 
   return (
-    <div  className="page-4" style={{ minHeight: '100vh', backgroundColor: 'lightblue', overflowX: 'hidden' }}>
+    <div  className="page-4" style={{ minHeight: '100vh', backgroundColor: '#ffffff', overflowX: 'hidden' }}>
    <div className='move'>  <div className="header4">
           <h1 className="title4">
             <span style={{ color: '#ce5e11' }}>TESTIMONIALS</span> 
@@ -77,6 +57,7 @@ const Page4 = () => {
             <div className="testimonial-image-name">
               <img src={testimonial.picture} alt={testimonial.name} className="testimonial-image" />
               <h4>{testimonial.name}</h4>
+              <p>{testimonial.rank}</p>
             </div>
             <div className="testimonial-comment">
               <p>{testimonial.comment}</p>

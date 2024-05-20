@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import './Page2.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
-
-const Page1 = () => {
+import {Link} from 'react-router-dom'
+const Page2 = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -12,7 +12,7 @@ const Page1 = () => {
   }, []);
 
   return (
-    <div className="page-2" style={{ minHeight: '90vh', backgroundColor: 'lightblue', overflowX: 'hidden' }}>
+    <div className="page-2" style={{ minHeight: '100vh', backgroundColor: '#ffffff', overflowX: 'hidden' }}>
       <div className="header2">
         <h1 className="title2">
           Mastering <span style={{ color: '#ce5e11' }}>Current Affairs</span> is a crucial step in conquering the UPSC CSE. Our program offers a streamlined approach designed for your success:
@@ -43,30 +43,30 @@ const Page1 = () => {
         </div>
 
         <div className='details2' style={{ fontSize: '1.2em', marginLeft: '5%' }}>
-          <a href="#" className="link">
+        <Link to="/CA" target="_blank" rel="noopener noreferrer">
             <div>
               <h2>
                 <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#0e85d1', marginRight: '5px' }} />
                 <strong style={{ color: '#34495E' }}>Monthly Magazine</strong><strong> (Best rated by our students)</strong><br />Released in two parts – 1st & 16th of every month.
               </h2>
             </div>
-          </a>
-          <a href="#" className="link">
+          </Link>
+          <Link to="/CA" target="_blank" rel="noopener noreferrer">
             <div>
               <h2>
                 <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#0e85d1', marginRight: '5px' }} />
                 <strong style={{ color: '#34495E' }}>Quarterly Magazine</strong><br />Subject wise compilation released once in three months. This is nothing but Yearly magazine divided into four parts.
               </h2>
             </div>
-          </a>
-          <a href="#" className="link">
+            </Link>
+          <Link to="/CA" target="_blank" rel="noopener noreferrer">
             <div>
               <h2>
                 <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#0e85d1', marginRight: '5px' }} />
                 <strong style={{ color: '#34495E' }}>MCQ Magazine</strong><br />For quick revision of Monthly Current Affairs presented in MCQ format.
               </h2>
             </div>
-          </a>
+            </Link>
         </div>
 
       </div>
@@ -74,4 +74,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Page2;

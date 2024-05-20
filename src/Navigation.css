@@ -1,53 +1,60 @@
-.nav-fix {
-  position: fixed; /* For other browsers */
-  top: 16%; /* Stick to the top of the viewport */
-  /* height: 100px; Set a fixed height for the sticky navigation */
-}
-
-
+/* Navigation.css */
 .navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  padding: 10px;
   background-color: #0e85d1;
-  color: white;
-  padding: 10px 0;
-  flex-direction: row;
-  /* Switch back to horizontal layout on larger screens */
-  margin-right: 2%; /* Add space between buttons */
-
 }
 
-.navigation button {
+.nav-link {
+  text-decoration: none;
+}
+
+button {
+  background: none;
   border: none;
-  background-color: transparent;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
-  gap: 4%; /* Add little gap between buttons */
-  margin-bottom: 10px; /* Add space between buttons */
-
+  margin: 0 10px;
+  color: white;
 }
 
-@media only screen and (max-width: 600px) {
+.nav-icon {
+  display: none;
+  width: 32px; /* Increase icon size */
+  height: 32px;
+}
+
+.nav-text {
+  display: block;
+  font-size: 18px; /* Adjust text size */
+}
+
+@media (max-width: 600px) {
   .navigation {
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-    justify-content: space-around; /* Adjust alignment for smaller screens */
-    padding: 5px; /* Reduce padding for smaller screens */
-    margin-right: 0; /* Remove margin between buttons */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* padding: 10px; */
   }
 
-  .navigation button {
-    flex: 0 0 45%; /* Adjust button width for smaller screens */
-    margin-bottom: 5px; /* Reduce space between buttons */
+  .nav-icon {
+    display: block;
+    width: 55px; /* Further increase icon size for mobile */
+    height: 55px;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  button {
+    flex: 0 0 45%;
+    /* margin: 6px 0; */
+    font-size: 18px; /* Adjust button text size for mobile */
   }
 }
-
-
-
- 
-
-  
-
