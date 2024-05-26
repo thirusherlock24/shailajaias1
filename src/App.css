@@ -1,16 +1,30 @@
 .App {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
+header {
+  width: 100%;
+  background-color: #add8e6; /* Example color, adjust as needed */
+}
 
+main {
+  flex: 1; /* Allows the main content to expand and take up available space */
+  width: 100%;
+}
 
+footer {
+  width: 100%;
+  background-color: #f1f1f1; /* Example color, adjust as needed */
+  padding: 10px;
+  text-align: center;
+}
 
-/* Ensure that content doesn't overflow horizontally */
 body {
   overflow-x: hidden;
 }
-/* App.css or a global CSS file */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -21,14 +35,8 @@ body, html {
   box-sizing: inherit;
 }
 
-
-/* Apply flexbox to make sure content stays within viewport width */
-
-
-/* Ensure Landing, Navigation, and Navpages divs stay within viewport width */
 .Landing,
 .Navigation,
 .Navpages {
   width: 100%;
 }
-

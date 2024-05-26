@@ -17,15 +17,16 @@ import MainsRetrieve from './MainsRetrieve.js';
 import Notify from './FetchNotify.js'
 import FetchNotify from './FetchNotify.js';
 function App() {
+  require('dotenv').config();
+
   const firebaseConfig = {
-    // Your Firebase project configuration
-    apiKey: "AIzaSyCs9U_csYuioIgSAfDT9GQDzPlMCiHgSpQ",
-    authDomain: "shailajaias.firebaseapp.com",
-    projectId: "shailajaias",
-    storageBucket: "shailajaias.appspot.com",
-    messagingSenderId: "562388357978",
-    appId: "1:562388357978:web:488cbe05190bd5b4bad963",
-    measurementId: "G-D72B51KFL6"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
   };
 
   if (!firebase.apps.length) {
@@ -33,43 +34,59 @@ function App() {
   }
 
   useEffect(() => {
-    firebase.auth().signInAnonymously().catch(function(error) {
-      console.error("Error signing in anonymously:", error);
-    });
+    const signInAnonymously = async () => {
+      try {
+        await firebase.auth().signInAnonymously();
+        console.log('Signed in anonymously');
+      } catch (error) {
+        console.error('Error signing in anonymously:', error);
+      }
+    };
+
+    signInAnonymously();
   }, []);
 
-  const Layout = ({ children }) => (
-    <>
-      <div className="Landing">
-        <Landing />
-      </div>
-      <div className="Navigation">
-        <Navigation />
+  // const Layout = ({ children }) => (
+  //   <>
+  //     <div className="Landing">
+  //       <Landing />
+  //     </div>
+  //     <div className="Navigation">
+  //       <Navigation />
         
-      </div>
-      <div className="Notify">
-      <Notify/>
-      </div>
-      <div>
+  //     </div>
+  //     <div className="Notify">
+  //     <Notify/>
+  //     </div>
+  //     <div>
         
-        {children}
-      </div>
-    </>
-  );
+  //       {children}
+  //     </div>
+  //   </>
+  // );
 
   return (
-    <Router>
-        <Routes>
-
-      <Route path="/" element={<Layout><Page1 /></Layout>} />
-        <Route path="/page2" element={<Layout><Page2 /></Layout>} />
-        <Route path="/page3" element={<Layout><Page3 /></Layout>} />
-        <Route path="/page4" element={<Layout><Page4 /></Layout>} />
-        <Route path="/page5" element={<Layout><Page5 /></Layout>} />
-        <Route path="/CA" element={<Retrieve  />} />
-        <Route path="/Mains-CA" element={<MainsRetrieve />} />
-        {/* Add more routes as needed */}
-      </Routes>
+     <Router>
+      <div className="App">
+        <header>
+          <Landing />
+          <Navigation />
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Page1 />} />
+            <Route path="/page2" element={<Page2 />} />
+            <Route path="/page3" element={<Page3 />} />
+            <Route path="/page4" element={<Page4 />} />
+            <Route path="/page5" element={<Page5 />} />
+            <Route path="/CA" element={<Retrieve />} />
+            <Route path="/Mains-CA" element={<MainsRetrieve />} />
+          </Routes>
+        </main>
+        <footer>
+          <Notify />
+        </footer>
+      </div>
     </Router>
   );
 }
