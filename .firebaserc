@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "shailajaias"
-  }
+    "default": "shailajaias",
+    "deploy": "smachan-fab33",
+    "f": "smachan-fab33"
+  },
+  "targets": {},
+  "etags": {}
 }
