@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import './App.css';
+import 'firebase/firestore';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth'; // Import Firebase Authentication
-import 'firebase/compat/firestore'; // Import Firestore
-import 'firebase/compat/storage'; // Import Storage
+import 'firebase/compat/storage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './Landingpage.js';
 import Navigation from './Navigation.js';
@@ -14,20 +14,24 @@ import Page4 from './Page4';
 import Retrieve from './Retrieve.js';
 import Page5 from './Page5';
 import MainsRetrieve from './MainsRetrieve.js';
+import Notify from './FetchNotify.js'
 import FetchNotify from './FetchNotify.js';
-
-const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
-};
-
-
 function App() {
+  require('dotenv').config();
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDE1NP9JLv1p8U7o_tE9R-GahDUtU8LUaY",
+  authDomain: "shailajaias-ee635.firebaseapp.com",
+  projectId: "shailajaias-ee635",
+  storageBucket: "shailajaias-ee635.appspot.com",
+  messagingSenderId: "31185153851",
+  appId: "1:31185153851:web:40b9d9c2a31e008fb6511e",
+  };
+
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+
   useEffect(() => {
     const signInAnonymously = async () => {
       try {
@@ -41,8 +45,27 @@ function App() {
     signInAnonymously();
   }, []);
 
+  // const Layout = ({ children }) => (
+  //   <>
+  //     <div className="Landing">
+  //       <Landing />
+  //     </div>
+  //     <div className="Navigation">
+  //       <Navigation />
+        
+  //     </div>
+  //     <div className="Notify">
+  //     <Notify/>
+  //     </div>
+  //     <div>
+        
+  //       {children}
+  //     </div>
+  //   </>
+  // );
+
   return (
-    <Router>
+     <Router>
       <div className="App">
         <header>
           <Landing />
@@ -59,9 +82,9 @@ function App() {
             <Route path="/Mains-CA" element={<MainsRetrieve />} />
           </Routes>
         </main>
-        {/* <footer>
+        {/* /*<footer>
           <Notify />
-        </footer> */}
+        </footer>*/}
       </div>
     </Router>
   );
