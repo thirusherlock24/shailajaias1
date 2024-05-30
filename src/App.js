@@ -19,14 +19,16 @@ import FetchNotify from './FetchNotify.js';
 function App() {
   require('dotenv').config();
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyDE1NP9JLv1p8U7o_tE9R-GahDUtU8LUaY",
-  authDomain: "shailajaias-ee635.firebaseapp.com",
-  projectId: "shailajaias-ee635",
-  storageBucket: "shailajaias-ee635.appspot.com",
-  messagingSenderId: "31185153851",
-  appId: "1:31185153851:web:40b9d9c2a31e008fb6511e",
-  };
+ // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAlnSn1gMqbkV1J_n-E4xiv2vh5Q1eb1zA",
+  authDomain: "shailajaias1.firebaseapp.com",
+  projectId: "shailajaias1",
+  storageBucket: "shailajaias1.appspot.com",
+  messagingSenderId: "154181094207",
+  appId: "1:154181094207:web:b3280706ecac8497eae18a",
+  measurementId: "G-7Q7HBVWMXB"
+};
 
   if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
