@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Landingpage = () => {
   return (
-    <header className="h-[16.6666vh] flex flex-column md:flex justify-between items-center p-2.5 bg-blue-200 text-white">
+    <header className="h-[16.6666vh] flex flex-column md:flex justify-between items-center p-2.5 bg-blue-200 text-white relative">
       <div className="flex items-center">
         <div className="name max-w-[200px] p-2.5 ml-[2%] md:ml-0">
           <h1 className="text-2xl md:text-3xl font-bold text-center md:text-left">
@@ -13,7 +13,7 @@ const Landingpage = () => {
           </h1>
         </div>
         <div className="logo-container flex justify-center items-center">
-          <img src={symbol} alt="logo" className="max-h-[30%] max-w-[30%]" />
+          <img src={symbol} alt="logo" className="max-h-[20%] max-w-[20%] " />
         </div>
       </div>
       <div className="contact-details flex flex-col items-end text-black mt-4 md:mt-0 whitespace-nowrap md:flex-1 md:justify-end">

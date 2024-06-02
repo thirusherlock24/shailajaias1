@@ -78,7 +78,7 @@ const Page1 = () => {
           </div>
         </div>
         <div className='details'>
-        <div className="youtube flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start mt-5 md:mt-0">
+        <div className="youtube flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start mt-5 md:mt-0 mb-4 md:mb-0">
   <iframe
       className="w-full md:w-3/5 h-64 md:h-80"
     width="60%" 
