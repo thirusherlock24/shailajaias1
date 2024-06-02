@@ -84,9 +84,9 @@ const firebaseConfig = {
             <Route path="/Mains-CA" element={<MainsRetrieve />} />
           </Routes>
         </main>
-        {/* /*<footer>
+        /*<footer>
           <Notify />
-        </footer>*/}
+        </footer>
       </div>
     </Router>
   );
