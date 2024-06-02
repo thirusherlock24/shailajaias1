@@ -96,10 +96,7 @@ button {
     justify-content: center; /* Center items vertically */
   }
 
-  .youtube {
-    display: none;
-    width: 60%;
-  }
+  
 }
 
 .container {

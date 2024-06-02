@@ -20,7 +20,7 @@ const MainsRetrieve = () => {
         {folders.map((folder, index) => (
           <div key={index} onClick={() => handleClick(folder)} style={{ cursor: 'pointer', marginRight: '10px' }}>
             <Folder style={{ marginRight: '5px' }} />
-            <span style={{ color: 'brown' }}>{folder}</span>
+            <span style={{ color: 'brown' }}  className='whitespace-nowrap'>{folder}</span>
           </div>
         ))}
       </Box>

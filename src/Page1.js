@@ -77,9 +77,10 @@ const Page1 = () => {
             </h2>
           </div>
         </div>
-        <div className='details flex justify-end'>
-        <div className='youtube'>
+        <div className='details'>
+        <div className="youtube flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start mt-5 md:mt-0">
   <iframe
+      className="w-full md:w-3/5 h-64 md:h-80"
     width="60%" 
     height="60%"
     src="https://www.youtube.com/embed/9_xMvx-vnJ0?list=RD9_xMvx-vnJ0&start_radio=1&origin=https://your-app-domain.com" // Replace with your domain
