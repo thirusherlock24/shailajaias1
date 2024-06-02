@@ -59,8 +59,8 @@
     max-width: 100%;
   }
 
-  .logo-container,
-  .contact-details {
+  .logo-container
+   {
     display: none;
   }
 }

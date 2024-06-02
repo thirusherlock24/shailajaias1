@@ -85,6 +85,8 @@ button {
   position: relative; /* Necessary for absolutely positioned children */
   display: flex;
   flex-direction: column;
+  transform: translateX(3%); /* Vertically center the element */
+
 }
 
 @media (max-width: 600px) {

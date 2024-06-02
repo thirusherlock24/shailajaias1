@@ -15,13 +15,13 @@ const Page1 = () => {
 
   return (
     <div className="page-1" style={{ minHeight: '100vh', backgroundColor: '#ffffff', paddingTop: '1rem' }}>
-      <div>
+      <div className=''>
         <h1 className="title">
           Comprehensive Mentorship Programme for UPSC CSE 2025 & beyond
         </h1>
       </div>
       <div className='container'>
-        <div className='content' style={{fontSize: '1.2em'}}>
+        <div className='content' style={{fontSize: '1.2rem'}}>
           <div>
             <h2>
               <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#0e85d1', marginRight: '5px' }} />
@@ -77,7 +77,7 @@ const Page1 = () => {
             </h2>
           </div>
         </div>
-        <div className='details'>
+        <div className='details flex justify-end'>
         <div className='youtube'>
   <iframe
     width="60%" 

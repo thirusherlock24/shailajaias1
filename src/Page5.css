@@ -32,11 +32,16 @@
   line-height: 1.6;
   margin-bottom: 1rem;
 }
-
+.Mobile{
+  display: none;
+}
 @media (max-width: 600px) {
   .container5 {
     flex-direction: column;
     align-items: center;
+  }
+  .Mobile{
+    display:block;
   }
 
   .content5 {

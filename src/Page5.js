@@ -1,7 +1,7 @@
 // Page5.js
 import React, { useEffect } from 'react';
 import './Page5.css';
-
+import Testimonails from './Page4';
 const Page5 = () => {
   useEffect(() => {
     window.scrollTo({
@@ -11,6 +11,10 @@ const Page5 = () => {
   }, []);
 
   return (
+    <div>
+      <div className='Mobile'>
+      <Testimonails/>
+      </div>
     <div className="page-5" style={{ minHeight: '100vh', backgroundColor: '#ffffff', paddingTop: '1rem' }}>
       <div>
         <h1 className="title5">About Us</h1>
@@ -33,6 +37,7 @@ const Page5 = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
