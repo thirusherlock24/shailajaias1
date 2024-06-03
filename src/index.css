@@ -26,3 +26,12 @@ body, html {
 * {
   box-sizing: inherit;
 }
+.CTABtn {
+  border-radius: 10rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.CTABtn:hover {
+  border-radius: 0;
+}

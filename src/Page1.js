@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import './Page1.css';
-import YouTube from 'react-youtube';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
-import Form from './Form'; // Import the Form component
 
 const Page1 = () => {
   useEffect(() => {
@@ -20,8 +18,8 @@ const Page1 = () => {
           Comprehensive Mentorship Programme for UPSC CSE 2025 & beyond
         </h1>
       </div>
-      <div className='container'>
-        <div className='content' style={{fontSize: '1.2rem'}}>
+      <div className='container my-6'>
+        <div className='content' style={{ fontSize: '1.2rem' }}>
           <div>
             <h2>
               <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#0e85d1', marginRight: '5px' }} />
@@ -77,22 +75,30 @@ const Page1 = () => {
             </h2>
           </div>
         </div>
-        <div className='details'>
-        <div className="youtube flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start mt-5 md:mt-0 mb-4 md:mb-0">
-  <iframe
-      className="w-full md:w-3/5 h-64 md:h-80"
-    width="60%" 
-    height="60%"
-    src="https://www.youtube.com/embed/9_xMvx-vnJ0?list=RD9_xMvx-vnJ0&start_radio=1&origin=https://your-app-domain.com" // Replace with your domain
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-  ></iframe>
-</div>
+        <div className='details flex flex-col justify-center items-center'>
+          <div className="youtube mt-12 md:mt-6 mb-6  ">
+            <iframe
+              className="w-full md:w-96 h-64 md:h-80"
+              src="https://www.youtube.com/embed/9_xMvx-vnJ0?list=RD9_xMvx-vnJ0&start_radio=1&origin=https://your-app-domain.com" // Replace with your domain
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
 
-
-          <Form /> {/*Add the Form component*/}
+          <div className="flex justify-center items-center w-full">
+            <a 
+              href="https://forms.gle/WUrF9qL4BssbR6vE6" // Replace with your actual Google Form link
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full md:w-auto"
+            >
+              <button className="CTABtn w-full md:w-fit py-4 px-8 heading5 text-white bg-[#0e85d1] hover:text-black hover:bg-[#ce5e11] transition-all duration-300">
+                Fill Google Form
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

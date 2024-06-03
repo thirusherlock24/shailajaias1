@@ -39,7 +39,14 @@ const Page4 = () => {
       rank:'AIR 22 in RBI Grade B 2023 Exam ',
       comment: '       Goutham Sir is a great mentor who will look at your preparation holistically and ensure that you\'re always on the right track. “I\'m grateful to have known you over the past year as a mentor and a friend”',
       picture: '/images/5.jpg'
+    },
+    {
+      name:'Manupriya Tyagi',
+      rank:'AIR 572 in UPSC CSE 2023',
+      comment:'I would like to extend my gratitude to Gowtham sir for all his guidance. And I would also like to wish him the best for his institute.',
+      picture:'/images/5.jpeg'
     }
+
   ];
   
 
