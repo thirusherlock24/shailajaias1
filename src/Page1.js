@@ -12,9 +12,9 @@ const Page1 = () => {
   }, []);
 
   return (
-    <div className="page-1 mt-6 md:mt-0" style={{ minHeight: '100vh', backgroundColor: '#ffffff', paddingTop: '1rem' }}>
+    <div className="page-1 mt-6 md:mt-0" style={{ backgroundColor: '#ffffff', paddingTop: '1rem' }}>
       <div className=''>
-        <h1 className="title">
+      <h1 className="p-1 w-4/5 mx-auto text-5vw md:text-3vw lg:text-2vw font-bold text-[#ce5e11] text-center">
           Comprehensive Mentorship Programme for UPSC CSE 2025 & beyond
         </h1>
       </div>
@@ -75,10 +75,10 @@ const Page1 = () => {
             </h2>
           </div>
         </div>
-        <div className='details flex flex-col justify-center items-center'>
-          <div className="youtube mt-12 md:mt-6 mb-6  ">
+        <div className="details flex flex-col justify-center items-center">
+  <div className="youtube mt-12 md:mt-24 lg:mt-6 mb-6">
             <iframe
-              className="w-full md:w-96 h-64 md:h-80"
+              className="w-full md:w-[32rem] lg:w-96 h-64 lg:h-80"
               src="https://www.youtube.com/embed/9_xMvx-vnJ0?list=RD9_xMvx-vnJ0&start_radio=1&origin=https://your-app-domain.com" // Replace with your domain
               title="YouTube video player"
               frameBorder="0"

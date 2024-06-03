@@ -12,9 +12,9 @@ const Page2 = () => {
   }, []);
 
   return (
-    <div className="page-2" style={{ minHeight: '100vh', backgroundColor: '#ffffff', overflowX: 'hidden' }}>
+    <div className="page-2" style={{ backgroundColor: '#ffffff', overflowX: 'hidden' }}>
       <div className="header2">
-        <h1 className="title2">
+        <h1 className="title2 text-4vw md:text-2vw lg:text-1vw">
           Mastering <span style={{ color: '#ce5e11' }}>Current Affairs</span> is a crucial step in conquering the UPSC CSE. Our program offers a streamlined approach designed for your success:
         </h1>
       </div>

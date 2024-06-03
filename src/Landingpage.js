@@ -12,8 +12,10 @@ const Landingpage = () => {
             <span className="text-orange-600">IAS</span>
           </h1>
         </div>
-        <div className="logo-container flex justify-center items-center">
+        <div className='hidden lg:block'>
+        <div className="flex justify-center items-center">
           <img src={symbol} alt="logo" className="max-h-[30%] max-w-[30%]" />
+        </div>
         </div>
       </div>
       <div className="contact-details flex flex-col items-end text-black mt-4 md:mt-0 whitespace-nowrap md:flex-1 md:justify-end">

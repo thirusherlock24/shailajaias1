@@ -121,7 +121,11 @@ button {
     font-size: 5vw;
   }
 
+  
+}
+@media (max-width: 1000px) {
   .container {
+  
     flex-direction: column;
     align-items: center; /* Center items horizontally */
   }

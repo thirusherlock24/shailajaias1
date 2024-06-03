@@ -51,7 +51,7 @@ const Page4 = () => {
   
 
   return (
-    <div  className="page-4" style={{ minHeight: '100vh', backgroundColor: '#ffffff', overflow: 'hidden' }}>
+    <div  className="page-4" style={{ backgroundColor: '#ffffff', overflow: 'hidden' }}>
    <div className='move'>  <div className="header4">
           <h1 className="title4">
             <span style={{ color: '#ce5e11' }}>TESTIMONIALS</span> 

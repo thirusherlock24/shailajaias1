@@ -12,7 +12,7 @@ const Page3 = () => {
   }, []);
 
   return (
-    <div className="page-3" style={{ minHeight: '100vh', backgroundColor: '#ffffff', overflowX: 'hidden' }}>
+    <div className="page-3" style={{ backgroundColor: '#ffffff', overflowX: 'hidden' }}>
       <div className="move">
         <div className="header3">
           <h1 className="title3">

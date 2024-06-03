@@ -15,7 +15,7 @@ const Page5 = () => {
       <div className='Mobile mb-12'>
       <Testimonails/>
       </div>
-    <div className="page-5" style={{ minHeight: '100vh', backgroundColor: '#ffffff', paddingTop: '1rem' }}>
+    <div className="page-5" style={{ backgroundColor: '#ffffff', paddingTop: '1rem' }}>
       <div>
         <h1 className="title5">About Us</h1>
       </div>
