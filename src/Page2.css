@@ -35,6 +35,9 @@
     margin-right: 2%;
     margin-bottom: 1%;
   }
+  .title2{
+    font-size: 2vw;
+  }
   @media (max-width:600px) {
     .page-2 {
       position: relative; /* Ensure that top property works */
@@ -60,6 +63,10 @@
   @media (max-width: 600px) {
     .title2 {
       font-size: 5vw;
+    }
+  }
+  @media (min-width: 640px) and (max-width: 1000px) {    .title2 {
+      font-size: 3vw;
     }
   }
   @media (max-width: 600px) {

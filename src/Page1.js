@@ -12,7 +12,7 @@ const Page1 = () => {
   }, []);
 
   return (
-    <div className="page-1 mt-6 md:mt-0" style={{ backgroundColor: '#ffffff', paddingTop: '1rem' }}>
+    <div className="page-1 mt-6 lg:mt-0" style={{ backgroundColor: '#ffffff', paddingTop: '1rem' }}>
       <div className=''>
       <h1 className="p-1 w-4/5 mx-auto text-5vw md:text-3vw lg:text-2vw font-bold text-[#ce5e11] text-center">
           Comprehensive Mentorship Programme for UPSC CSE 2025 & beyond

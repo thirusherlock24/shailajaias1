@@ -51,9 +51,9 @@ const Page4 = () => {
   
 
   return (
-    <div  className="page-4" style={{ backgroundColor: '#ffffff', overflow: 'hidden' }}>
+    <div  className="page-4 mt-0 md:mt-24 lg:mt-0" style={{ backgroundColor: '#ffffff', overflow: 'hidden' }}>
    <div className='move'>  <div className="header4">
-          <h1 className="title4">
+          <h1 className="title4 text-5vw md:text-3vw lg:text-2vw">
             <span style={{ color: '#ce5e11' }}>TESTIMONIALS</span> 
           </h1>
         </div>     

@@ -25,12 +25,12 @@
   padding: 1%;
   width: 80%;
   margin: 0 auto;
-  font-size: 2vw;
+  /* font-size: 2vw; */
   font-weight: bold;
   color: #000000;
   text-align: center;
   padding: 1rem 0; /* Add vertical padding */
-  font-size: 2.5vw;
+  /* font-size: 2.5vw; */
 }
 
 .testimonial-item {
@@ -74,7 +74,7 @@
   }
 
   .title4 {
-    font-size: 4vw; /* Larger on smaller screens */
+    font-size: 4vw; 
   }
   
   .page-4 {

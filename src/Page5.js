@@ -15,9 +15,9 @@ const Page5 = () => {
       <div className='Mobile mb-12'>
       <Testimonails/>
       </div>
-    <div className="page-5" style={{ backgroundColor: '#ffffff', paddingTop: '1rem' }}>
+    <div className="page-5 mt-0 md:mt-24 lg:mt-0" style={{ backgroundColor: '#ffffff', paddingTop: '1rem' }}>
       <div>
-        <h1 className="title5">About Us</h1>
+        <h1 className="title5 text-5vw md:text-3vw lg:text-2vw">About Us</h1>
       </div>
       <div className="container5">
         <div className="content5">

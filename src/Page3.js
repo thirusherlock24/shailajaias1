@@ -12,10 +12,10 @@ const Page3 = () => {
   }, []);
 
   return (
-    <div className="page-3" style={{ backgroundColor: '#ffffff', overflowX: 'hidden' }}>
+    <div className="page-3 mt-0 md:mt-12 lg:mt-0" style={{ backgroundColor: '#ffffff', overflowX: 'hidden' }}>
       <div className="move">
         <div className="header3">
-          <h1 className="title3">
+          <h1 className="title3 text-5vw md:text-3vw lg:text-2vw">
             <span style={{ color: '#ce5e11' }}>Mains Test Series</span> 
           </h1>
         </div>
