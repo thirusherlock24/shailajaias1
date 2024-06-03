@@ -12,7 +12,7 @@ const Page5 = () => {
 
   return (
     <div>
-      <div className='Mobile'>
+      <div className='Mobile mb-12'>
       <Testimonails/>
       </div>
     <div className="page-5" style={{ minHeight: '100vh', backgroundColor: '#ffffff', paddingTop: '1rem' }}>

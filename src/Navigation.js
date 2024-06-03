@@ -36,7 +36,7 @@ function Navigation() {
           <span className="nav-text">MAINS TEST SERIES</span>
         </button>
       </Link>
-      <Link to="/page4" className="nav-link flex justify-center items-center">
+      <Link to="/page4" className=" hidden md:block nav-link flex justify-center items-center">
         <button className="flex flex-col items-center nav-text">
           <span className="nav-text">TESTIMONIALS</span>
         </button>
@@ -44,7 +44,7 @@ function Navigation() {
       <Link to="/page5" className="nav-link flex justify-center items-center">
         <button className="flex flex-col items-center">
           <div className="nav-icon">
-            <img src={about} alt="About Icon" className="nav-icon" />
+            <img src={about} alt="About Icon" />
             <div className="text-xs">About</div>
           </div>
           <span className="nav-text">ABOUT</span>

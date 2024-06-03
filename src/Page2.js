@@ -20,7 +20,7 @@ const Page2 = () => {
       </div>
       <div className='container2'>
 
-        <div className='content2' style={{ fontSize: '1.2em', marginLeft: '5%' }}>
+        <div className='content2 my-6 md:my-0' style={{ fontSize: '1.2em', marginLeft: '5%' }}>
           <div>
             <h2>
               <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#0e85d1', marginRight: '1%' }} />
