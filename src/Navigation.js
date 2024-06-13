@@ -18,7 +18,7 @@ function Navigation() {
           <span className="nav-text">MENTORSHIP</span>
         </button>
       </Link>
-      <Link to="/page2" className="nav-link flex justify-center items-center">
+      <Link to="/CA" className="nav-link flex justify-center items-center">
         <button className="flex flex-col items-center">
           <div className="nav-icon">
             <img src={ca} alt="Current Affairs Icon" />
@@ -27,7 +27,7 @@ function Navigation() {
           <span className="nav-text">CURRENT AFFAIRS</span>
         </button>
       </Link>
-      <Link to="/page3" className="nav-link flex justify-center items-center">
+      <Link to="/Mains" className="nav-link flex justify-center items-center">
         <button className="flex flex-col items-center">
           <div className="nav-icon">
             <img src={ma} alt="Mains Test Series Icon" />
@@ -36,12 +36,12 @@ function Navigation() {
           <span className="nav-text">MAINS TEST SERIES</span>
         </button>
       </Link>
-      <Link to="/page4" className=" hidden md:block nav-link flex justify-center items-center">
+      <Link to="/Testimonials" className=" hidden md:block nav-link flex justify-center items-center">
         <button className="flex flex-col items-center nav-text">
           <span className="nav-text">TESTIMONIALS</span>
         </button>
       </Link>
-      <Link to="/page5" className="nav-link flex justify-center items-center">
+      <Link to="/About" className="nav-link flex justify-center items-center">
         <button className="flex flex-col items-center">
           <div className="nav-icon">
             <img src={about} alt="About Icon" />

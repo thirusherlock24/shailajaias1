@@ -79,7 +79,7 @@ const Page1 = () => {
   <div className="youtube mt-12 md:mt-24 lg:mt-6 mb-6">
             <iframe
               className="w-full md:w-[32rem] lg:w-96 h-64 lg:h-80"
-              src="https://www.youtube.com/embed/9_xMvx-vnJ0?list=RD9_xMvx-vnJ0&start_radio=1&origin=https://your-app-domain.com" // Replace with your domain
+ src="https://www.youtube.com/embed/0U9KDQnIsNk?origin=https://your-app-domain.com" width="560" height="315" frameborder="0" allowfullscreen
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -87,17 +87,20 @@ const Page1 = () => {
             ></iframe>
           </div>
 
-          <div className="flex justify-center items-center w-full">
+          <div className="flex flex-col justify-center items-center w-full">
+
             <a 
-              href="https://forms.gle/WUrF9qL4BssbR6vE6" // Replace with your actual Google Form link
+              href="https://forms.gle/2SD4bfp4MYNPxrhp7" // Replace with your actual Google Form link
               target="_blank" 
               rel="noopener noreferrer"
               className="w-full md:w-auto"
-            >
+              >
               <button className="CTABtn w-full md:w-fit py-4 px-8 heading5 text-white bg-[#0e85d1] hover:text-black hover:bg-[#ce5e11] transition-all duration-300">
                 Fill Google Form
               </button>
             </a>
+            <p className='w-full md:w-fit md:ml-16 md:m-6 md:px-8 font-bold '>Fill out the form above to get two free one-on-one mentorship sessions with Goutham Sir.</p>
+
           </div>
         </div>
       </div>

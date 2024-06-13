@@ -43,7 +43,7 @@ const Page2 = () => {
         </div>
 
         <div className='details2' style={{ fontSize: '1.2em', marginLeft: '5%' }}>
-        <Link to="/CA" target="_blank" rel="noopener noreferrer">
+        <Link to="/CA-docs" target="_blank" rel="noopener noreferrer">
             <div>
               <h2>
                 <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#0e85d1', marginRight: '5px' }} />
@@ -51,7 +51,7 @@ const Page2 = () => {
               </h2>
             </div>
           </Link>
-          <Link to="/CA" target="_blank" rel="noopener noreferrer">
+          <Link to="/CA-docs" target="_blank" rel="noopener noreferrer">
             <div>
               <h2>
                 <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#0e85d1', marginRight: '5px' }} />
@@ -59,7 +59,7 @@ const Page2 = () => {
               </h2>
             </div>
             </Link>
-          <Link to="/CA" target="_blank" rel="noopener noreferrer">
+          <Link to="/CA-docs" target="_blank" rel="noopener noreferrer">
             <div>
               <h2>
                 <FontAwesomeIcon icon={faChevronCircleRight} style={{ color: '#0e85d1', marginRight: '5px' }} />

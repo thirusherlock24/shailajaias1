@@ -1,0 +1,96 @@
+@font-face {
+     font-family: 'Blackcrow';
+     src: url('/src/fonts/Blackcrow-Thin.eot');
+     src: local('Blackcrow Thin'), local('Blackcrow-Thin'),
+          url('/src/fonts/Blackcrow-Thin.eot?#iefix') format('embedded-opentype'),
+          url('/src/fonts/Blackcrow-Thin.woff2') format('woff2'),
+          url('/src/fonts/Blackcrow-Thin.woff') format('woff'),
+          url('/src/fonts/Blackcrow-Thin.ttf') format('truetype');
+     font-weight: 100;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Blackcrow';
+     src: url('/src/fonts/Blackcrow-Regular.eot');
+     src: local('Blackcrow Regular'), local('Blackcrow-Regular'),
+          url('/src/fonts/Blackcrow-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/src/fonts/Blackcrow-Regular.woff2') format('woff2'),
+          url('/src/fonts/Blackcrow-Regular.woff') format('woff'),
+          url('/src/fonts/Blackcrow-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Blackcrow';
+     src: url('/src/fonts/Blackcrow-SemiBold.eot');
+     src: local('Blackcrow SemiBold'), local('Blackcrow-SemiBold'),
+          url('/src/fonts/Blackcrow-SemiBold.eot?#iefix') format('embedded-opentype'),
+          url('/src/fonts/Blackcrow-SemiBold.woff2') format('woff2'),
+          url('/src/fonts/Blackcrow-SemiBold.woff') format('woff'),
+          url('/src/fonts/Blackcrow-SemiBold.ttf') format('truetype');
+     font-weight: 600;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Blackcrow';
+     src: url('/src/fonts/Blackcrow-Medium.eot');
+     src: local('Blackcrow Medium'), local('Blackcrow-Medium'),
+          url('/src/fonts/Blackcrow-Medium.eot?#iefix') format('embedded-opentype'),
+          url('/src/fonts/Blackcrow-Medium.woff2') format('woff2'),
+          url('/src/fonts/Blackcrow-Medium.woff') format('woff'),
+          url('/src/fonts/Blackcrow-Medium.ttf') format('truetype');
+     font-weight: 500;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Blackcrow';
+     src: url('/src/fonts/Blackcrow-Light.eot');
+     src: local('Blackcrow Light'), local('Blackcrow-Light'),
+          url('/src/fonts/Blackcrow-Light.eot?#iefix') format('embedded-opentype'),
+          url('/src/fonts/Blackcrow-Light.woff2') format('woff2'),
+          url('/src/fonts/Blackcrow-Light.woff') format('woff'),
+          url('/src/fonts/Blackcrow-Light.ttf') format('truetype');
+     font-weight: 300;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Blackcrow';
+     src: url('/src/fonts/Blackcrow-Bold.eot');
+     src: local('Blackcrow Bold'), local('Blackcrow-Bold'),
+          url('/src/fonts/Blackcrow-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/src/fonts/Blackcrow-Bold.woff2') format('woff2'),
+          url('/src/fonts/Blackcrow-Bold.woff') format('woff'),
+          url('/src/fonts/Blackcrow-Bold.ttf') format('truetype');
+     font-weight: bold;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Blackcrow';
+     src: url('/src/fonts/Blackcrow-ExtraBold.eot');
+     src: local('Blackcrow ExtraBold'), local('Blackcrow-ExtraBold'),
+          url('/src/fonts/Blackcrow-ExtraBold.eot?#iefix') format('embedded-opentype'),
+          url('/src/fonts/Blackcrow-ExtraBold.woff2') format('woff2'),
+          url('/src/fonts/Blackcrow-ExtraBold.woff') format('woff'),
+          url('/src/fonts/Blackcrow-ExtraBold.ttf') format('truetype');
+     font-weight: 800;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Blackcrow';
+     src: url('/src/fonts/Blackcrow-ExtraLight.eot');
+     src: local('Blackcrow ExtraLight'), local('Blackcrow-ExtraLight'),
+          url('/src/fonts/Blackcrow-ExtraLight.eot?#iefix') format('embedded-opentype'),
+          url('/src/fonts/Blackcrow-ExtraLight.woff2') format('woff2'),
+          url('/src/fonts/Blackcrow-ExtraLight.woff') format('woff'),
+          url('/src/fonts/Blackcrow-ExtraLight.ttf') format('truetype');
+     font-weight: 200;
+     font-style: normal;
+ }
+ 

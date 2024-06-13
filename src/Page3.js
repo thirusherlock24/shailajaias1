@@ -20,11 +20,11 @@ const Page3 = () => {
           </h1>
         </div>
         <div className='details3' style={{ fontSize: '1.2em', marginLeft: '5%' }}>
-        <Link to="/Mains-CA" target="_blank" rel="noopener noreferrer">
+        <Link to="/Mains-CA-docs" target="_blank" rel="noopener noreferrer">
             <div className='inside-div'>
               <div className='inside-heading'>
-                <h2>
-                  <strong style={{ color: '#34495E' }}>Phase 1</strong><strong> (90 days)</strong><br/>8th July 2024 - 6th Oct 2024
+                <h2 className="whitespace-nowrap">
+                  <strong style={{ color: '#34495E' }}>Phase 1</strong><strong> (90 days)</strong><br/>
                 </h2>
               </div>
               <div className='inside-content'>
@@ -33,16 +33,16 @@ const Page3 = () => {
                   2.  Internal Security & DM<br/>
                   3.  Ethics<br/>
                   4.  Agriculture & Economy<br/>
-                  5.  Governance & Social Justice<br/><br/>Total Mains Marks Coverage: ~ 470
+                  5.  Governance & Social Justice<br/>
                 </h2>
               </div>
             </div>
           </Link>
-          <Link to="/Mains-CA" target="_blank" rel="noopener noreferrer">
+          <Link to="/Mains-CA-docs" target="_blank" rel="noopener noreferrer">
             <div className='inside-div'>
               <div className='inside-heading'>
-                <h2>
-                  <strong style={{ color: '#34495E' }}>Phase 2</strong><strong> (100 days)</strong><br/>14th Oct 2024 – 26th Jan 2025
+                <h2 className="whitespace-nowrap">
+                  <strong style={{ color: '#34495E'  }}>Phase 2</strong><strong> (100 days)</strong><br/>
                 </h2>
               </div>
               <div className='inside-content'>
@@ -51,16 +51,16 @@ const Page3 = () => {
                   2.  Polity<br/>
                   3.  Economy<br/>
                   4.  Modern History<br/>
-                  5.  Environment<br/><br/>Total Mains Marks Coverage: ~ 400
+                  5.  Environment<br/>
                 </h2>
               </div>
             </div>
             </Link>
-          <Link to="/Mains-CA" target="_blank" rel="noopener noreferrer">
+          <Link to="/Mains-CA-docs" target="_blank" rel="noopener noreferrer">
             <div className='inside-div'>
               <div className='inside-heading'>
-                <h2>
-                  <strong style={{ color: '#34495E' }}>Phase 3</strong><strong> (50 days)</strong><br/>1st Feb 2025 – 22nd March 2025
+                <h2 className="whitespace-nowrap">
+                  <strong style={{ color: '#34495E'  }}>Phase 3</strong><strong> (50 days)</strong><br/>
                 </h2>
               </div>
               <div className='inside-content'>
@@ -68,7 +68,7 @@ const Page3 = () => {
                   1.  Geography<br/>
                   2.  Ancient & med History<br/>
                   3.  Science & Technology<br/>
-                  4.  Miscellaneous <br/><br/>Total Mains Marks Coverage: ~ 470
+                  4.  Miscellaneous <br/>
                 </h2>
               </div>
             </div>

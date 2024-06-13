@@ -12,6 +12,9 @@ module.exports = {
         '4vw':'4vw',
         '6vw':'6vw',
       },
+      fontFamily: {
+        'blackcrow': ['"Blackcrow"', 'sans-serif'],
+      },
     },
   },
   plugins: [],

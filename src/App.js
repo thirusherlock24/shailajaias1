@@ -76,15 +76,15 @@ const firebaseConfig = {
         <main>
           <Routes>
             <Route path="/" element={<Page1 />} />
-            <Route path="/page2" element={<Page2 />} />
-            <Route path="/page3" element={<Page3 />} />
-            <Route path="/page4" element={<Page4 />} />
-            <Route path="/page5" element={<Page5 />} />
-            <Route path="/CA" element={<Retrieve />} />
-            <Route path="/Mains-CA" element={<MainsRetrieve />} />
+            <Route path="/CA" element={<Page2 />} />
+            <Route path="/Mains" element={<Page3 />} />
+            <Route path="/Testimonials" element={<Page4 />} />
+            <Route path="/About" element={<Page5 />} />
+            <Route path="/CA-docs" element={<Retrieve />} />
+            <Route path="/Mains-CA-docs" element={<MainsRetrieve />} />
           </Routes>
         </main>
-        /*<footer>
+        <footer>
           <Notify />
         </footer>
       </div>

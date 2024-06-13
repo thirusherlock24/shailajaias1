@@ -37,6 +37,11 @@ const Page5 = () => {
           </p>
         </div>
       </div>
+      <div className="developed-by mt-8 text-center">
+          <p className="text-sm text-gray-600">
+            Developed by <a href="https://www.linkedin.com/in/thirunavukarasu-l-496b2112a" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">THIRUNAVUKARASU L</a>
+          </p>
+        </div>
     </div>
     </div>
   );
