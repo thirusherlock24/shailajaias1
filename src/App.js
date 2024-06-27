@@ -1,34 +1,34 @@
-import React, { useEffect } from 'react';
-import './App.css';
-import 'firebase/firestore';
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth'; // Import Firebase Authentication
-import 'firebase/compat/storage';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './Landingpage.js';
-import Navigation from './Navigation.js';
-import Page1 from './Page1';
-import Page2 from './Page2';
-import Page3 from './Page3';
-import Page4 from './Page4';
-import Retrieve from './Retrieve.js';
-import Page5 from './Page5';
-import MainsRetrieve from './MainsRetrieve.js';
-import Notify from './FetchNotify.js'
-import FetchNotify from './FetchNotify.js';
+import React, { useEffect } from "react";
+import "./App.css";
+import "firebase/firestore";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth"; // Import Firebase Authentication
+import "firebase/compat/storage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landing from "./Landingpage.js";
+import Navigation from "./Navigation.js";
+import Page1 from "./Page1";
+import Page2 from "./Page2";
+import Page3 from "./Page3";
+import Page4 from "./Page4";
+import Retrieve from "./Retrieve.js";
+import Page5 from "./Page5";
+import MainsRetrieve from "./MainsRetrieve.js";
+import Notify from "./FetchNotify.js";
+import FetchNotify from "./FetchNotify.js";
 function App() {
   // require('dotenv').config();
 
- // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAlnSn1gMqbkV1J_n-E4xiv2vh5Q1eb1zA",
-  authDomain: "shailajaias1.firebaseapp.com",
-  projectId: "shailajaias1",
-  storageBucket: "shailajaias1.appspot.com",
-  messagingSenderId: "154181094207",
-  appId: "1:154181094207:web:b3280706ecac8497eae18a",
-  measurementId: "G-7Q7HBVWMXB"
-};
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAlnSn1gMqbkV1J_n-E4xiv2vh5Q1eb1zA",
+    authDomain: "shailajaias1.firebaseapp.com",
+    projectId: "shailajaias1",
+    storageBucket: "shailajaias1.appspot.com",
+    messagingSenderId: "154181094207",
+    appId: "1:154181094207:web:b3280706ecac8497eae18a",
+    measurementId: "G-7Q7HBVWMXB",
+  };
 
   if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
@@ -38,9 +38,9 @@ const firebaseConfig = {
     const signInAnonymously = async () => {
       try {
         await firebase.auth().signInAnonymously();
-        console.log('Signed in anonymously');
+        console.log("Signed in anonymously");
       } catch (error) {
-        console.error('Error signing in anonymously:', error);
+        console.error("Error signing in anonymously:", error);
       }
     };
 
@@ -54,20 +54,20 @@ const firebaseConfig = {
   //     </div>
   //     <div className="Navigation">
   //       <Navigation />
-        
+
   //     </div>
   //     <div className="Notify">
   //     <Notify/>
   //     </div>
   //     <div>
-        
+
   //       {children}
   //     </div>
   //   </>
   // );
 
   return (
-     <Router>
+    <Router>
       <div className="App">
         <header>
           <Landing />
@@ -76,12 +76,12 @@ const firebaseConfig = {
         <main>
           <Routes>
             <Route path="/" element={<Page1 />} />
-            <Route path="/CA" element={<Page2 />} />
-            <Route path="/Mains" element={<Page3 />} />
+            <Route path="/CA-landing" element={<Page2 />} />
+            <Route path="/Mains-landing" element={<Page3 />} />
             <Route path="/Testimonials" element={<Page4 />} />
             <Route path="/About" element={<Page5 />} />
-            <Route path="/CA-docs" element={<Retrieve />} />
-            <Route path="/Mains-CA-docs" element={<MainsRetrieve />} />
+            <Route path="/CA" element={<Retrieve />} />
+            <Route path="/Mains" element={<MainsRetrieve />} />
           </Routes>
         </main>
         <footer>
