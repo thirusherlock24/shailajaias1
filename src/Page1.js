@@ -1,16 +1,36 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Page1.css";
+import { getDocs, collection } from "firebase/firestore";
+import { db } from "./Firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Page1 = () => {
+  const [notifications, setNotifications] = useState([]);
+  const [youtubelink, setYoutubelink] = useState(null); // Initialize with null
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }, []);
+  useEffect(() => {
+    const fetchNotifications = async () => {
+      const snapshot = await getDocs(collection(db, "Youtube"));
+      const data = snapshot.docs.map((doc) => doc.data());
+      setNotifications(data);
 
+      // Assuming you have a single document with id 'youtube' and field 'link'
+      if (data.length > 0) {
+        const link = data[0].link; // Fetching the 'link' field from the first document
+        setYoutubelink(link);
+        console.log("video link reached");
+      }
+    };
+
+    fetchNotifications();
+  }, []);
   return (
     <div
       className="page-1 mt-6 lg:mt-0"
@@ -134,7 +154,7 @@ const Page1 = () => {
           <div className="youtube mt-12 md:mt-24 lg:mt-6 mb-6">
             <iframe
               className="w-full md:w-[32rem] lg:w-96 h-64 lg:h-80"
-              src="https://www.youtube.com/embed/e5GemGpXoxM?origin=https://your-app-domain.com"
+              src={`https://www.youtube.com/embed/${youtubelink}?origin=https://your-app-domain.com`}
               width="560"
               height="315"
               frameborder="0"
