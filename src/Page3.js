@@ -21,6 +21,12 @@ const Page3 = () => {
           <h1 className="title3 text-5vw md:text-3vw lg:text-2vw">
             <span style={{ color: "#ce5e11" }}>Mains Test Series</span>
           </h1>
+          <h2
+            style={{ color: "black", fontSize: "14px", textalign: "center" }}
+            className="text-black text-lg font-bold whitespace-nowrap align text-center underline"
+          >
+            Click below for documents
+          </h2>
         </div>
         <div
           className="details3"

@@ -21,7 +21,7 @@ const MainsRetrieve = () => {
           style={{ color: "black", fontSize: "20px" }}
           className="text-black text-lg font-bold"
         >
-          Mains Current Affairs
+          Mains Test Series
         </div>
       </Box>
       <Box p={1} semi-bold textAlign="center">

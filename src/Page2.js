@@ -68,6 +68,12 @@ const Page2 = () => {
           className="details2"
           style={{ fontSize: "1.2em", marginLeft: "5%" }}
         >
+          <h2
+            style={{ color: "black", fontSize: "14px" }}
+            className="text-black text-lg font-bold whitespace-nowrap underline -translate-y-4"
+          >
+            Click below for documents
+          </h2>
           <Link to="/CA" target="_blank" rel="noopener noreferrer">
             <div>
               <h2>
